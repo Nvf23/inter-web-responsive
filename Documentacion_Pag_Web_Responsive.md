@@ -8,6 +8,7 @@ La página "Login" y los diferentes Scrips los hemos realizado en conjunto.
 
 La pagina web es de estilo tienda, basandonos en la pagina web de la marca de dispositivos electronicos Xiaomi, sieguiendo un poco su estilo estético.
 
+# 1a Página - Login
 La primera página es la de "Login", siendo un inicio de sesión.
 
 ![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto22.png) 
@@ -42,3 +43,11 @@ Este menú se oculta en dispositivos de pantalla pequeña. El menú se esconde y
 Justo debajo de esta barra de navegación nos encontramos con un carrusel de imagenes, las cuales cambian con las flechas laterales. 
 
 ![Login](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto1.png) 
+
+Bajando un poco mas podemos ver un menú con diferentes enlaces, los cuales nos llevarán a las diferentes partes de la página. 
+
+El contenedor donde estan estos enlaces contiene una imagen lateral principal y 4 imagenes en formato fila, las cuales se amplian al pasar el ratón por encima. Estas imágenes redirigen al apartado "Tienda". 
+
+Mas abajo encontramos otro contenedor con las mismas características y un footer estilo "Disclaimer"
+
+
