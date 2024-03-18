@@ -2,8 +2,8 @@
 Realizado por Luciano Nicolas Viscio Frank y Marti Salom Ponseti
 
 ### Organización
-Luciano Nicolas Viscio Frank ha realizado las páginas "Main" y "Comparativa".
-Marti Salóm Ponseti ha realizado las páginas "Tienda" y "Encuesta" 
+* Luciano Nicolas Viscio Frank ha realizado las páginas "Main" y "Comparativa".
+* Marti Salóm Ponseti ha realizado las páginas "Tienda" y "Encuesta" 
 
 La página "Login" y los diferentes Scrips los hemos realizado en conjunto.
 
