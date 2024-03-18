@@ -7,7 +7,7 @@ Realizado por Luciano Nicolas Viscio Frank y Marti Salom Ponseti
 
 La página "Login" y los diferentes Scrips los hemos realizado en conjunto.
 
-### Organización de los documentos.
+### Organización de los documentos
 * La carpeta principal contiene en su raíz solo los diferentes HTML que componen la página y las carpetas de imagenes, scripts y estilos.
 * La carpeta "fotos" contiene todas las imágenes utilizadas.
 * La carpeta "scripts" contiene los archivos .js con los scripts para el correcto funcionamiento de la página.
