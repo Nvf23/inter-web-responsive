@@ -76,5 +76,25 @@ El menú para pantallas pequeñas tambien cambia.
 
 ![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto14.png) 
 
+# Página 4 - Comparativa
+Esta página contiene dos contenedores, los cuales tienen 4 prodcutos, pudiendose seleccionar y comparar las características de los dispositivios elegidos. 
 
+Al elegir los diferentes dispositivios cambiará tanto la imagen como las caracteristicas de cada uno.
+
+![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto8.png) 
+
+# Página 5 - Encuesta de satisfacción
+En esta página simplemente es una encuesta de satisfacción, la cual nos pedirá pulsar 1 de 4 opciones tanto para la calidad de los productos como para la atención al cliente.
+
+Estas opciones se pondrán mas oscuras al pulsarlas.
+
+![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto16.png) 
+
+Para que la página pueda enviar de manera exitosa la encuesta tendrá que tener seleccionada una opcón en las dos encuestas (Excelente, Bueno, Regular, Malo) , no haciendo falta escribir nada en el recuadro de texto.
+
+![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto17.png) 
+
+Una vez realizada de manera exitosa la encueta aparecerá un recuadro en formato alert el cual, al confirmarlo, redirige a la página principal. 
+
+![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto18.png) 
 
