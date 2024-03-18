@@ -1,12 +1,18 @@
 # Página web responsive + Java Script.
 Realizado por Luciano Nicolas Viscio Frank y Marti Salom Ponseti
 
+* Organización
 Luciano Nicolas Viscio Frank ha realizado las páginas "Main" y "Comparativa".
 Marti Salóm Ponseti ha realizado las páginas "Tienda" y "Encuesta" 
 
 La página "Login" y los diferentes Scrips los hemos realizado en conjunto.
 
-La pagina web es de estilo tienda, basandonos en la pagina web de la marca de dispositivos electronicos Xiaomi, sieguiendo un poco su estilo estético.
+* Organización de los documentos.
+** La carpeta principal contiene en su raíz solo los diferentes HTML que componen la página y las carpetas de imagenes, scripts y estilos.
+** La carpeta "fotos" contiene todas las imágenes utilizadas.
+** La carpeta "scripts" contiene los archivos .js con los scripts para el correcto funcionamiento de la página.
+** La carpeta "estilos" contiene los archivos .css con los estilos para la correcta visualización de la página.
+** La pagina web es de estilo tienda, basandonos en la pagina web de la marca de dispositivos electronicos Xiaomi, sieguiendo un poco su estilo estético.
 
 # Página 1 - Login
 La primera página es la de "Login", siendo un inicio de sesión.
