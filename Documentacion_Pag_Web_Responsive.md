@@ -96,5 +96,5 @@ Para que la página pueda enviar de manera exitosa la encuesta tendrá que tener
 
 Una vez realizada de manera exitosa la encueta aparecerá un recuadro en formato alert el cual, al confirmarlo, redirige a la página principal. 
 
-![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto18.png) 
+![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto100.png) 
 
