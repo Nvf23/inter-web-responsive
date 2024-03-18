@@ -1,0 +1,287 @@
+
+/* Estilo aplicado a toda la página */
+
+html {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del cuerpo de la página */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s, filter 0.5s;
+}
+
+/* Estilos para el menú superior de navegación  */
+
+.menu {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    margin-left: 30px;
+    margin-right: 50px;
+    width: 32px;
+}
+
+/* Estilos para los enlaces del menú superior de navegación */
+  
+.enlaces {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.enlaces li {
+    margin-right: 20px;
+}
+  
+.enlaces li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.enlaces li a:hover {
+    color: orange;
+}
+  
+.enlaces li a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -20px; 
+    left: 0;
+    width: calc(100%); 
+    height: 2px;
+    background-color: orange;
+}
+
+/* Estilo para el botón que aparece al tener la página en formato móvil (para el menú lateral) */
+
+.boton-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    position: relative;
+    margin-left: 70%;
+}
+
+/* Estilos para el menú lateral (responsive) */
+
+.menu-lateral {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    width: 50%; 
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 9999; 
+    overflow-y: auto; 
+    
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul p {
+    color:orangered;
+}
+
+.menu-lateral ul li {
+    margin-bottom: 30px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-lateral ul li a:hover {
+    color:orange;
+}
+
+body.dark-mode{
+    filter: invert(0); 
+}
+
+/* Estilo para los h1 principales de la página */
+
+.mains {
+
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Estilos para el texto de los productos y su "contenedor" */
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.producto {
+    width: calc(33.33% - 50px); 
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+/* Estilo para las imagenes de los productos */
+
+.imagen-producto {
+    width: 65%; 
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.producto:hover .imagen-producto {
+    transform: scale(1.1);
+}
+
+/* Estilos para unos iconos de la página */
+
+.grande {
+    font-size: 28px;
+}
+
+.grande1 {
+    font-size: 20px;
+}
+
+/* Estilos para el cambio de modo claro/oscuro de la página */
+/* Hay diferentes opciones para hacer que los items y otros apartados de la página no se vean afectados */
+/* Hace el inverso de las cosas para poder hacer este efecto */
+
+body.dark-mode {
+    filter: invert(1);
+}
+
+body.dark-mode .logo img,
+body.dark-mode .producto .imagen-producto {
+    filter: invert(0);
+    transition: filter 0.5s;
+}
+
+body:not(.dark-mode) .logo img,
+body:not(.dark-mode) .producto .imagen-producto {
+    filter: invert(0);
+    transition: filter 0.5s;
+}
+
+body.dark-mode  {
+    filter: invert(1);
+}
+.logo img,
+.producto .imagen-producto {
+    filter: none; 
+}
+
+
+body.dark-mode .logo img,
+body.dark-mode .producto .imagen-producto {
+    filter: invert(1); 
+}
+
+/* Parametros para hacer la página responsive */
+
+/* Estilos para dispositivos de pantalla grande */
+
+@media screen and (min-width: 1024px) {
+
+    .boton-menu {
+        display: none;
+    }
+
+    .menu #modoBotonMenu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: 20px; 
+}
+
+.menu #modoBotonMenu i {
+    font-size: 20px; 
+    display: none;
+}
+
+.menu.dark-mode #modoBotonMenu i:nth-child(2),
+.menu:not(.dark-mode) #modoBotonMenu i:nth-child(1) {
+    display: inline; 
+}
+}
+  
+/* Estilos para dispositivos de pantalla mediana */
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    .boton-menu {
+        display: none;
+    }
+    
+    .enlaces2 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+}
+  
+/* Estilos para dispositivos de pantalla pequeña */
+
+@media screen and (max-width: 767px) {
+
+    .mains {
+
+        font-size: 3.4vw;
+    }
+    .enlaces {
+        display: none;
+    }
+
+    .enlaces2 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .oscuro-estilo{
+        display: none;
+    }
+
+    .producto {
+        width: calc(50% - 50px); /* Ajusta el ancho para que haya tres productos por fila con espacio entre ellos */
+    }
+
+}

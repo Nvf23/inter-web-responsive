@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Repositorio de iconos -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos/tienda.css" />
+    <title>Bienvenido a la tienda</title>
+  </head>
+
+  <body>
+    <!-- Menu superior de navegación -->
+
+    <div class="menu">
+      <div class="logo">
+        <img src="fotos/logo.png" alt="Logo" />
+      </div>
+
+      <!-- Boton del menu lateral que sale al hacerse responsive -->
+
+      <div id="boton-menu" class="boton-menu">
+        <i class="ri-menu-line"></i>
+      </div>
+
+      <!-- Enlaces del menú de navegación -->
+      <!-- La clase "errorEnlace" ejecuta un script -->
+
+      <ul class="enlaces">
+        <li><a href="main.html">Inicio</a></li>
+        <li><a href="comparativa.html">Comparativa</a></li>
+        <li><a href="#" class="errorEnlace">Wearables</a></li>
+        <li><a href="#" class="errorEnlace">Smart Home</a></li>
+        <li><a href="encuesta.html">Encuesta de Satisfacción</a></li>
+      </ul>
+
+      <!-- Boton de cambio a modo oscuro -->
+
+      <div id="modo-oscuro" class="oscuro-estilo">
+        <i class="ri-sun-line"></i> <i class="ri-moon-line"></i>
+      </div>
+    </div>
+
+    <!-- Los h1 con clase "mains" son los titulos de los diferentes contenedores -->
+
+    <h1 class="mains">¡Los mejores productos a los mejores precios!</h1>
+
+    <!-- Productos mostrados en la tienda -->
+
+    <div class="productos">
+      <div class="producto">
+        <img src="fotos/movil2.jpg" alt="Producto 1" class="imagen-producto" />
+        <h3>Poco F5</h3>
+        <p>Desde 199.99€</p>
+      </div>
+      <div class="producto">
+        <img src="fotos/movil3.jpg" alt="Producto 2" class="imagen-producto" />
+        <h3>POCO X7</h3>
+        <p>Desde 159.99€</p>
+      </div>
+      <div class="producto">
+        <img src="fotos/movil4.jpg" alt="Producto 3" class="imagen-producto" />
+        <h3>Poco X5</h3>
+        <p>Desde 139.99€</p>
+      </div>
+      <div class="producto">
+        <img src="fotos/movil5.jpg" alt="Producto 4" class="imagen-producto" />
+        <h3>Redmi 12C</h3>
+        <p>Desde 129.99€</p>
+      </div>
+      <div class="producto">
+        <img src="fotos/movil2.jpg" alt="Producto 5" class="imagen-producto" />
+        <h3>Poco FS8</h3>
+        <p>Desde 299.99€</p>
+      </div>
+      <div class="producto">
+        <img src="fotos/movil3.jpg" alt="Producto 6" class="imagen-producto" />
+        <h3>Redmi Note 9</h3>
+        <p>Desde 100€</p>
+      </div>
+      <div class="producto">
+        <img src="fotos/movil2.jpg" alt="Producto 7" class="imagen-producto" />
+        <h3>Xiaomi 9</h3>
+        <p>Desde 119.99€</p>
+      </div>
+      <div class="producto">
+        <img src="fotos/movil5.jpg" alt="Producto 8" class="imagen-producto" />
+        <h3>Roco F6</h3>
+        <p>Desde 139.99€</p>
+      </div>
+      <div class="producto">
+        <img src="fotos/movil4.jpg" alt="Producto 9" class="imagen-producto" />
+        <h3>Redmi 13F</h3>
+        <p>Desde 189.99€</p>
+      </div>
+    </div>
+
+    <!-- Enlaces del menu lateral (sale al hacer la pagina en formato móvil) -->
+
+    <div id="menuLateral" class="menu-lateral">
+      <ul>
+        <li><p>Xiaomi</p></li>
+        <li>
+          <a href="main.html"><i class="ri-home-line grande1"></i> Inicio</a>
+        </li>
+        <li>
+          <a href="comparativa.html"
+            ><i class="ri-smartphone-line grande1"></i> Comparativa</a
+          >
+        </li>
+        <li>
+          <a href="#" class="errorEnlace"
+            ><i class="ri-bluetooth-line grande1"></i> Wearables</a
+          >
+        </li>
+        <li>
+          <a href="#" class="errorEnlace"
+            ><i class="ri-home-office-line grande1"></i> Smart Home</a
+          >
+        </li>
+        <li>
+          <a href="encuesta.html"
+            ><i class="ri-mental-health-line grande1"></i> Encuesta de
+            Satisfacción</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Los diferenets scripts de la pagina -->
+
+    <script src="scripts/submenu.js"></script>
+    <script src="scripts/modo.js"></script>
+    <script src="scripts/errorenlace.js"></script>
+    <script src="scripts/errorfoto.js"></script>
+  </body>
+</html>

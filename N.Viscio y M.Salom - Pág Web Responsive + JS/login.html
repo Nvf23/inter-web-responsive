@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acceso a la página</title>
+    <link rel="stylesheet" href="estilos/login.css" />
+  </head>
+  <body>
+    <!-- Contenedor con los diferentes campos a completar -->
+
+    <div class="contenedor-login">
+      <div class="logo">
+        <img src="fotos/logo.png" alt="Logo" />
+      </div>
+
+      <!-- Formulario a completar para poder entrar a la página -->
+
+      <form id="loginForm" action="#" method="post">
+        <input
+          type="text"
+          id="usuario"
+          name="usuario"
+          placeholder="Usuario (mín. 4 car.)"
+          required
+        /><br />
+        <input
+          type="password"
+          id="contraseña"
+          name="contraseña"
+          placeholder="Contraseña (mín. 5 car., 1 mayu., 2 núm.)"
+          required
+        /><br />
+        <input type="submit" value="Iniciar Sesión" />
+        <div id="error-msg" class="error"></div>
+      </form>
+    </div>
+
+    <!-- Script usado en la pagina -->
+
+    <script src="scripts/login.js"></script>
+  </body>
+</html>

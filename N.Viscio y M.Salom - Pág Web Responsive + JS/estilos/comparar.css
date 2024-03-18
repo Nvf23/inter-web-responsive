@@ -1,0 +1,300 @@
+html {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; 
+    color: black; 
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+.menu {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    margin-left: 30px;
+    margin-right: 50px;
+    width: 32px;
+}
+  
+.enlaces {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.enlaces li {
+    margin-right: 20px;
+}
+  
+.enlaces li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.enlaces li a:hover {
+    color: orange;
+}
+  
+.enlaces li a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -20px; 
+    left: 0;
+    width: calc(100%); 
+    height: 2px;
+    background-color: orange;
+}
+
+.contenedor-principal {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los contenedores en la parte superior */
+    gap: 20px; /* Espacio entre los contenedores */
+}
+
+
+.contenedor-comparar {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.characteristics {
+    margin-top: 10px;
+    text-align: left;}
+        
+.characteristics p {
+    margin: 5px 0;
+}
+
+.info-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    position: relative;
+    margin-left: 70%;
+}
+
+.info-button span {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin: 2px 0; 
+}
+
+.menu-lateral {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    width: 50%; 
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 9999; 
+    overflow-y: auto; 
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul p {
+    color:orangered;
+}
+
+.menu-lateral ul li {
+    margin-bottom: 30px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-lateral ul li a:hover {
+    color:orange;
+}
+
+/* Parametros para hacer la página responsive */
+
+/* Estilos para dispositivos de pantalla grande */
+
+@media screen and (min-width: 1024px) {
+
+    .info-button {
+        display: none;
+    }
+
+    .text {
+      font-size: 1.5vw; 
+    }
+    
+    .image-item p {
+        font-size: 1vw;
+    }
+
+    .image-row {
+        max-height: 21vw;
+    }
+
+    .box h1 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    .box p {
+        font-size: 1vw;
+    }
+
+    .image-item{
+        margin-bottom: 30px;
+    }
+
+    .image-item img:hover {
+        height: 12vw;
+        width: 12vw;
+    }
+}
+  
+/* Estilos para dispositivos de pantalla mediana */
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    .info-button {
+        display: none;
+    }
+
+    .text {
+      font-size: 1.5vw; 
+    }
+
+    .text {
+      font-size: 2vw; 
+    }
+
+    .enlaces2 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .image-item img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .image-item h1 {
+        font-size: 2vw;
+    }
+
+    .image-item p {
+        font-size: 1.5vw;
+    }
+
+    .box h1 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    .box p {
+        font-size: 1.5vw;
+    }
+}
+  
+/* Estilos para dispositivos de pantalla pequeña */
+
+@media screen and (max-width: 767px) {
+
+    body {
+        min-height: 143vw;
+    }
+    .mains {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .enlaces {
+        display: none;
+    }
+
+    .text {
+      font-size: 2vw; 
+    }
+
+    .enlaces2 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .image-item img {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .image-item h1 {
+        font-size: 3.2vw;
+    }
+
+    .image-item p {
+        font-size: 2.3vw;
+    }
+
+    .box h1 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    .box p {
+        font-size: 2.3vw;
+    }
+
+    #pequeño {
+        font-size: 2vw;
+    }
+
+    #pequeño2 {
+        font-size: 2vw;
+    }
+
+
+}
+

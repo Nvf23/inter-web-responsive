@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="estilos/main.css" />
+    <link rel="stylesheet" href="estilos/comparar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Xiaomi</title>
+  </head>
+  <body>
+    <!-- Menu superior de navegación -->
+
+    <div class="menu">
+      <div class="logo">
+        <img src="fotos/logo.png" alt="Logo" />
+      </div>
+
+      <!-- Boton del menu lateral que sale al hacerse responsive -->
+
+      <div id="boton-menu" class="boton-menu">
+        <i class="ri-menu-line"></i>
+      </div>
+
+      <!-- Enlaces del menú de navegación -->
+      <!-- La clase "errorEnlace" ejecuta un script -->
+
+      <ul class="enlaces">
+        <li><a href="main.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="#" class="errorEnlace">Wearables</a></li>
+        <li><a href="#" class="errorEnlace">Smart Home</a></li>
+        <li><a href="encuesta.html">Encuesta de Satisfacción</a></li>
+      </ul>
+    </div>
+
+    <!-- Boton del menu lateral que sale al hacerse responsive -->
+
+    <div id="menuLateral" class="menu-lateral">
+      <ul>
+        <li><p>Xiaomi</p></li>
+        <br />
+        <li>
+          <a href="main.html"><i class="ri-home-line grande1"></i> Inicio</a>
+        </li>
+        <li>
+          <a href="tienda.html"><i class="ri-store-2-line"></i> Tienda</a>
+        </li>
+        <li>
+          <a href="#" class="errorEnlace"
+            ><i class="ri-bluetooth-line grande1"></i> Wearables</a
+          >
+        </li>
+        <li>
+          <a href="#" class="errorEnlace"
+            ><i class="ri-home-office-line grande1"></i> Smart Home</a
+          >
+        </li>
+        <li>
+          <a href="encuesta.html"
+            ><i class="ri-service-line"></i> Encuesta de Satisfacción</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <h1>¡Compara tus productos favoritos!</h1>
+
+    <!-- Contenedor de comparación de productos. Enseñara texto y foto del producto seleccionado -->
+    <!-- Los scripts mostraran al cargar la pagina los productos 1 y 2, los cuales son objetos dentro del Script -->
+    <div class="contenedor-principal">
+      <div class="contenedor-comparar">
+        <h2>Producto 1</h2>
+        <form id="product-1-form">
+          <select onchange="showProduct('1')">
+            <option value="">Seleccionar Producto</option>
+            <option value="fotos/movil2.jpg">Producto 1</option>
+            <option value="fotos/movil3.jpg">Producto 2</option>
+            <option value="fotos/movil4.jpg">Producto 3</option>
+            <option value="fotos/movil5.jpg">Producto 4</option>
+          </select>
+        </form>
+        <div id="product-1-info" style="display: none">
+          <img id="product-1-image" src="" alt="Producto 1" />
+          <div class="characteristics" id="product-1-characteristics"></div>
+        </div>
+      </div>
+
+      <div class="contenedor-comparar">
+        <h2>Producto 2</h2>
+        <form id="product-2-form">
+          <select onchange="showProduct('2')">
+            <option value="">Seleccionar Producto</option>
+            <option value="fotos/movil2.jpg">Producto 1</option>
+            <option value="fotos/movil3.jpg">Producto 2</option>
+            <option value="fotos/movil4.jpg">Producto 3</option>
+            <option value="fotos/movil5.jpg">Producto 4</option>
+          </select>
+        </form>
+        <div id="product-2-info" style="display: none">
+          <img id="product-2-image" src="" alt="Producto 2" />
+          <div class="characteristics" id="product-2-characteristics"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Los diferenets scripts de la pagina -->
+
+    <script src="scripts/errorenlace.js"></script>
+    <script src="scripts/comparar.js"></script>
+    <script src="scripts/submenu.js"></script>
+  </body>
+</html>

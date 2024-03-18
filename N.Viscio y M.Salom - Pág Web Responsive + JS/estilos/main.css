@@ -1,0 +1,448 @@
+
+/* Estilo aplicado a toda la página */
+
+html {
+    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del cuerpo de la página */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; 
+    color: black; 
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Estilos para el menú superior de navegación  */
+
+.menu {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    margin-left: 30px;
+    margin-right: 50px;
+    width: 32px;
+}
+
+/* Estilos para los enlaces del menú superior de navegación */
+
+.enlaces {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.enlaces li {
+    margin-right: 20px;
+}
+  
+.enlaces li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.enlaces li a:hover {
+    color: orange;
+}
+  
+.enlaces li a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -20px; 
+    left: 0;
+    width: calc(100%); 
+    height: 2px;
+    background-color: orange;
+}
+
+/* Estilo y propiedades del carrusel de imágenes */
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.carrusel img {
+    width: 100%;
+    display: block;
+}
+
+/* Estilo para el texto del carrusel por encima de las imagenes */
+  
+.texto-carrusel {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+  
+.texto-carrusel p {
+    color: black; 
+    font-size: 2vw;
+    margin: 0; 
+}
+
+.texto-carrusel h3 {
+    color: black; 
+    font-size: 2vw;
+    margin: 0; 
+}
+
+/* Estilos para las flechas de navegación de imagenes del carrusel */
+
+.flecha-izquierda,
+.flecha-derecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  text-align: center; 
+  line-height: 30px; 
+}
+
+.flecha-izquierda {
+  left: 10px;
+}
+
+.flecha-derecha {
+  right: 10px;
+}
+
+/* Estilo para los h1 principales de la página */
+
+.mains {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Estilo para el menú superior del primer contenedor */
+
+.menu2 {
+    display: flex;
+    align-items: center;
+}
+
+/* Enlaces para los enlaces del menú superior del primer contenedor */
+
+.enlaces2 {
+    list-style-type: none;
+    margin: 0 auto; 
+    padding: 0;
+    display: flex;
+}
+  
+.enlaces2 li {
+    margin-right: 20px;
+}
+  
+.enlaces2 li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: 0.15s;
+}
+
+.enlaces2 li a:hover {
+    color: orange;
+}
+
+/* Estilos para los contenedores con productos */
+
+.contenedor1 {
+    background-color: #ffffff;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilos para la imagen grande del contenedor */
+
+.contenido {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenido img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+}
+
+/* Estilos para el texto lateral de la imagen grande */
+
+.text {
+    font-size: 2.5vw;
+    text-align: center;
+    flex: 1;
+}
+
+.text p {
+    margin: 0;
+}
+
+/* Estilo para el texto e imagenes de los productos en fila del contenedor */
+
+.contenido-fila {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 37vw;
+}
+  
+.fila-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex: 1;
+    max-width: calc(25% - 20px); 
+    margin-right: 3%; 
+    margin-top: 3%;
+    cursor: pointer;
+
+}
+
+.fila-item img {
+    transition: 0.1s;
+}
+
+.fila-item img:hover {
+    transform: scale(1.1);
+}
+  
+.fila-item:last-child {
+    margin-right: 0; 
+}
+  
+.fila-item img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.fila-item h1 {
+    font-size: 2vw;
+    margin-top: 10px;
+    text-align: center; 
+}
+  
+.fila-item p {
+    font-size: 3vw;
+    margin-top: 10px;
+    text-align: center; 
+}
+
+/* Estilo para el footer */
+
+footer {
+    font-size: 5%;
+    background-color: black;
+    color: rgb(108, 107, 107);
+    padding: 2%;
+}
+
+/* Menú lateral que sale al poner la pagina en formato móvil*/
+
+.boton-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    position: relative;
+    margin-left: 70%;
+}
+
+.boton-menu span {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin: 2px 0; 
+}
+
+.menu-lateral {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    width: 50%; 
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 9999; 
+    overflow-y: auto; 
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral ul p {
+    color:orangered;
+}
+
+.menu-lateral ul li {
+    margin-bottom: 30px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-lateral ul li a:hover {
+    color:orange;
+}
+
+/* Estilos de diferentes textos */
+
+#pequeño {
+    color:rgb(157, 24, 24);
+    font-size: 1.3vw;
+}
+
+#pequeño2 {
+    color:rgb(112, 112, 112);
+    font-size: 1.3vw;
+}
+
+
+/* Parametros para hacer la página responsive */
+
+/* Estilos para dispositivos de pantalla grande */
+
+@media screen and (min-width: 1024px) {
+
+    .boton-menu {
+        display: none;
+    }
+
+    .text {
+      font-size: 1.5vw; 
+    }
+    
+    .fila-item p {
+        font-size: 1vw;
+    }
+
+    .contenido-fila {
+        max-height: 21vw;
+    }
+
+    .fila-item{
+        margin-bottom: 30px;
+    }
+
+    .fila-item img:hover {
+        height: 12vw;
+        width: 12vw;
+    }
+}
+  
+/* Estilos para dispositivos de pantalla mediana */
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    .boton-menu {
+        display: none;
+    }
+
+    .text {
+      font-size: 1.5vw; 
+    }
+
+    .text {
+      font-size: 2vw; 
+    }
+
+    .enlaces2 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .fila-item img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .fila-item h1 {
+        font-size: 2vw;
+    }
+
+    .fila-item p {
+        font-size: 1.5vw;
+    }
+}
+  
+/* Estilos para dispositivos de pantalla pequeña */
+
+@media screen and (max-width: 767px) {
+    .mains {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .enlaces {
+        display: none;
+    }
+
+    .text {
+      font-size: 2vw; 
+    }
+
+    .enlaces2 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .fila-item img {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .fila-item h1 {
+        font-size: 3.2vw;
+    }
+
+    .fila-item p {
+        font-size: 2.3vw;
+    }
+
+    #pequeño {
+        font-size: 2vw;
+    }
+
+    #pequeño2 {
+        font-size: 2vw;
+    }
+
+
+}
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Encuesta de Satisfacción - Tienda de Dispositivos Electrónicos
+    </title>
+    <link rel="stylesheet" href="estilos/encuesta.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Encuesta de Satisfacción</h1>
+      <p>
+        ¡Gracias por elegir nuestra tienda de dispositivos electrónicos! Tu
+        opinión es fundamental para nosotros.
+      </p>
+    </header>
+
+    <!-- Sección con las diferentes preguntas y con los botones de calificación -->
+
+    <section>
+      <h2>Por favor, completa nuestra encuesta:</h2>
+
+      <!-- Formulario con los botones y texto -->
+
+      <form id="encuestaForm" action="#" method="post">
+        <div class="question">
+          <label for="calidad"
+            >1. ¿Cómo calificarías la calidad de nuestros productos?</label
+          >
+
+          <!-- Botones de calificación -->
+
+          <div class="boton-encuesta">
+            <input
+              type="radio"
+              name="calidad"
+              id="excelente"
+              value="excelente"
+            />
+            <label for="excelente">Excelente</label>
+
+            <input type="radio" name="calidad" id="bueno" value="bueno" />
+            <label for="bueno">Bueno</label>
+
+            <input type="radio" name="calidad" id="regular" value="regular" />
+            <label for="regular">Regular</label>
+
+            <input type="radio" name="calidad" id="malo" value="malo" />
+            <label for="malo">Malo</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <label for="atencion"
+            >2. ¿Cómo calificarías la atención al cliente recibida?</label
+          >
+
+          <!-- Botones de calificación -->
+
+          <div class="boton-encuesta">
+            <input
+              type="radio"
+              name="atencion"
+              id="excelente-atencion"
+              value="excelente"
+            />
+            <label for="excelente-atencion">Excelente</label>
+
+            <input
+              type="radio"
+              name="atencion"
+              id="bueno-atencion"
+              value="bueno"
+            />
+            <label for="bueno-atencion">Bueno</label>
+
+            <input
+              type="radio"
+              name="atencion"
+              id="regular-atencion"
+              value="regular"
+            />
+            <label for="regular-atencion">Regular</label>
+
+            <input
+              type="radio"
+              name="atencion"
+              id="malo-atencion"
+              value="malo"
+            />
+            <label for="malo-atencion">Malo</label>
+          </div>
+        </div>
+
+        <!-- Texto de "comentario adicional" -->
+
+        <div class="question">
+          <label for="comentario">3. ¿Tienes algún comentario adicional?</label>
+          <textarea
+            name="comentario"
+            id="comentario"
+            placeholder="Escribe tus comentarios aquí"
+          ></textarea>
+        </div>
+
+        <!-- Boton de envio de encuesta, con su Script de validación -->
+
+        <button type="button" onclick="enviarEncuesta()">
+          Enviar Encuesta
+        </button>
+      </form>
+    </section>
+
+    <script src="scripts/alert.js"></script>
+  </body>
+</html>

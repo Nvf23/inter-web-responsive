@@ -1,0 +1,91 @@
+/* Etilo del cuerpo de la página */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-color: #f0f0f0;
+    background-image: url("../fotos/fondo-login.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo del contenedor de inicio de sesión */
+
+.contenedor-login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 8vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos de los bloques de texto, botones y texto de error */
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: orange;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(233, 152, 1);
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Parametros para hacer la página responsive */
+
+/* Estilos para dispositivos de pantalla grande */
+
+@media screen and (min-width: 1024px) {
+    .logo img {
+        max-width: 4vw;
+}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .logo img {
+        max-width: 6vw;
+}
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+
+@media screen and (max-width: 767px) {
+  
+}

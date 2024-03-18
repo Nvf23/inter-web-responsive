@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="estilos/main.css" />
+
+    <!-- Repositorio de iconos -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Bienvenido a Xiaomi</title>
+  </head>
+  <body>
+    <!-- Menu superior de navegación -->
+
+    <div class="menu">
+      <div class="logo">
+        <img src="fotos/logo.png" alt="Logo" />
+      </div>
+
+      <!-- Boton del menu lateral que sale al hacerse responsive -->
+
+      <div id="boton-menu" class="boton-menu">
+        <i class="ri-menu-line"></i>
+      </div>
+
+      <!-- Enlaces del menú de navegación -->
+      <!-- La clase "errorEnlace" ejecuta un script -->
+
+      <ul class="enlaces">
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="comparativa.html">Comparativa</a></li>
+        <li><a href="#" class="errorEnlace">Wearables</a></li>
+        <li><a href="#" class="errorEnlace">Smart Home</a></li>
+        <li><a href="encuesta.html">Encuesta de Satisfacción</a></li>
+      </ul>
+    </div>
+
+    <!-- Enlaces del menu lateral (sale al hacer la pagina en formato móvil) -->
+
+    <div id="menuLateral" class="menu-lateral">
+      <ul>
+        <li><p>Xiaomi</p></li>
+        <br />
+        <li>
+          <a href="tienda.html"><i class="ri-store-2-line"></i> Tienda</a>
+        </li>
+        <li>
+          <a href="comparativa.html"
+            ><i class="ri-smartphone-line grande1"></i> Comparativa</a
+          >
+        </li>
+        <li>
+          <a href="#" class="errorEnlace"
+            ><i class="ri-bluetooth-line grande1"></i> Wearables</a
+          >
+        </li>
+        <li>
+          <a href="#" class="errorEnlace"
+            ><i class="ri-home-office-line grande1"></i> Smart Home</a
+          >
+        </li>
+        <li>
+          <a href="encuesta.html"
+            ><i class="ri-service-line"></i> Encuesta de Satisfacción</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Carrusel princiapl con 3 imagenes que cambian al pulsar las flechas laterales -->
+    <!-- Este div es para añadir el texto encima de las imagenes del carrusel, el cual cambia dependiendo de la foto -->
+    <!-- Los scripts son para avanzar las imagenes o retroceder las imagenes del carrusel -->
+
+    <div class="carrusel">
+      <div class="texto-carrusel"></div>
+      <img src="fotos/carrusel1.jpg" class="carrusel-imagen" />
+      <div class="flecha-izquierda" onclick="retrocederCarrusel()">&#9664;</div>
+      <div class="flecha-derecha" onclick="avanzarCarrusel()">&#9654;</div>
+    </div>
+
+    <!-- Los h1 con clase "mains" son los titulos de los diferentes contenedores -->
+
+    <h1 class="mains">Productos Populares</h1>
+
+    <!-- Menu de navegación superior del contenedor de prodcutos -->
+    <!-- Enlaces de las diferentes secciones -->
+
+    <div class="menu2">
+      <ul class="enlaces2">
+        <li><a href="tienda.html">Rebajas</a></li>
+        <li><a href="tienda.html">Ofertas</a></li>
+        <li><a href="#" class="errorEnlace">Electrodomesticos</a></li>
+        <li><a href="#" class="errorEnlace">Wearables</a></li>
+      </ul>
+    </div>
+
+    <!-- Contenedor principal con los diferentes productos  -->
+    <!-- Imagen principal y texto principal del contenedor -->
+
+    <div class="contenedor1">
+      <div class="contenido">
+        <img src="fotos/imagen1.jpg" alt="Imagen 1" />
+        <div class="text">
+          <h3>Redmi Note 13 Pro 5G</h3>
+          <p>8GB+128GB | 80€ de dto</p>
+          <p>De hoy hasta fin de año | Precio Bird</p>
+          <br />
+          <p id="pequeño2">Desde 299,99€</p>
+        </div>
+      </div>
+
+      <!-- Fila de productos del contenedor -->
+      <!-- El ID pequeño es para modificar texto -->
+
+      <div class="contenido-fila">
+        <div class="fila-item" onclick="redireccionar()">
+          <img src="fotos/movil2.jpg" alt="Imagen 2" />
+          <h1><b>Poco F5</b></h1>
+          <p id="pequeño2">Desde 359,99€</p>
+        </div>
+        <div class="fila-item" onclick="redireccionar()">
+          <img src="fotos/movil3.jpg" alt="Imagen 3" />
+          <h1><b>POCO X7</b></h1>
+          <p id="pequeño2">Desde 299,99€</p>
+        </div>
+        <div class="fila-item" onclick="redireccionar()">
+          <img src="fotos/movil4.jpg" alt="Imagen 4" />
+          <h1><b>Poco X5</b></h1>
+          <p id="pequeño2">Desde 199,99€</p>
+        </div>
+        <div class="fila-item" onclick="redireccionar()">
+          <img src="fotos/movil5.jpg" alt="Imagen 5" />
+          <h1><b>Redmi 12C</b></h1>
+          <p id="pequeño2">Desde 99,99€</p>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="mains">Ofertas Exclusivas</h1>
+
+    <!-- Contenedor final de la pagina con otra tanda de productos -->
+
+    <div class="contenedor1">
+      <div class="contenido">
+        <div class="text">
+          <h3>Las mejores ofertas</h3>
+          <p>Dispositivos a precio de entrada</p>
+          <br />
+          <p id="pequeño2">¡Ofertas de escándalo!</p>
+        </div>
+        <img src="fotos/imagen2.jpg" alt="Imagen 1" />
+      </div>
+
+      <div class="contenido-fila">
+        <div class="fila-item" onclick="redireccionar()">
+          <img src="fotos/movil4.jpg" alt="Imagen 2" />
+          <h1><b>Poco F5</b></h1>
+          <p id="pequeño2">Desde 359,99€</p>
+        </div>
+        <div class="fila-item" onclick="redireccionar()">
+          <img src="fotos/movil5.jpg" alt="Imagen 3" />
+          <h1><b>POCO X7</b></h1>
+          <p id="pequeño2">Desde 299,99€</p>
+        </div>
+        <div class="fila-item" onclick="redireccionar()">
+          <img src="fotos/movil3.jpg" alt="Imagen 4" />
+          <h1><b>Poco X5</b></h1>
+          <p id="pequeño2">Desde 199,99€</p>
+        </div>
+        <div class="fila-item" onclick="redireccionar()">
+          <img src="fotos/movil2.jpg" alt="Imagen 5" />
+          <h1><b>Redmi 12C</b></h1>
+          <p id="pequeño2">Desde 99,99€</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Los diferenets scripts de la pagina -->
+
+    <script src="scripts/carrusel.js"></script>
+    <script src="scripts/submenu.js"></script>
+    <script src="scripts/errorenlace.js"></script>
+    <script src="scripts/carrusel1.js"></script>
+    <script src="scripts/redireccionar.js"></script>
+
+    <!-- Footer con información del tipo "disclaimer" -->
+
+    <footer>
+      <p>
+        Los descuentos dependen del estado, año y configuración del dispositivo
+        que entregues. Para poder cambiar tu dispositivo por un descuento o una
+        Apple Gift Card, tienes que ser mayor de edad. No todos los dispositivos
+        pueden acogerse a esta oferta. La entrega de ordenadores de mesa solo
+        puede tramitarse por internet en estos momentos. Para obtener más
+        información sobre los dispositivos válidos y su reciclaje, consulta a
+        nuestro socio. Puede haber restricciones y limitaciones. El pago
+        dependerá de que el estado del dispositivo coincida con el indicado
+        durante la tasación. Apple se reserva el derecho a rechazar o limitar la
+        cantidad de dispositivos según su criterio. El valor de tu dispositivo
+        se descontará del precio del producto Apple nuevo. Esta oferta puede no
+        estar disponible en todas las tiendas. Algunas tiendas pueden exigir más
+        requisitos.
+      </p>
+      <p>
+        Los descuentos para cambiar tu dispositivo por una Apple Gift Card
+        dependen de varios factores, como el estado, año y configuración del
+        dispositivo que entregues. Es importante destacar que para poder acceder
+        a esta oferta, es necesario ser mayor de edad. Sin embargo, no todos los
+        dispositivos son elegibles para este programa. En el caso de los
+        ordenadores de mesa, la entrega solo puede gestionarse por internet en
+        este momento. Para obtener detalles sobre los dispositivos válidos y el
+        proceso de reciclaje, te recomendamos que consultes a nuestro socio. Es
+        posible que existan restricciones y limitaciones adicionales, y el pago
+        final estará sujeto a que el estado del dispositivo coincida con la
+        evaluación inicial. Apple se reserva el derecho de rechazar o limitar la
+        cantidad de dispositivos según su criterio. Ten en cuenta que el valor
+        de tu dispositivo usado se descontará del precio del nuevo producto de
+        Apple. Es importante tener en cuenta que esta oferta podría no estar
+        disponible en todas las tiendas, y algunas podrían tener requisitos
+        adicionales.
+      </p>
+    </footer>
+  </body>
+</html>
