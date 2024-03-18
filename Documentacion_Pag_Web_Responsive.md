@@ -25,7 +25,7 @@ Una vez se cumplan las condiciones aparecerá un mensaje en formato Alert para c
 
 ![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto25.png) 
 
-La validación se lleva a cabo con un script llamado validarEncuesta()
+* La validación se lleva a cabo con un script llamado validarEncuesta()
 
 La función validarEncuesta() verifica si el usuario ha seleccionado opciones para evaluar la calidad de productos y la atención al cliente. Si no ha seleccionado ninguna opción, muestra el alert. La función enviarEncuesta() se activa al enviar la encuesta, verifica que se hayan rellenado todos los campos de la encuesta y muestra un mensaje de agradecimiento si todo está bien, redirigiendo al usuario a otra página. Si algo está mal, no hace nada hasta que se completen las selecciones necesarias.
 
@@ -59,9 +59,13 @@ Al pulsar los links de "Smart Home" y "Wereables" nos saldrá un error de que es
 
 ![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto10.png) 
 
-El carrusel se lleva a cabo con el script del archivo "carrusel.js"
+* El carrusel se lleva a cabo con el script del archivo "carrusel.js"
 
 Al cargar la página, se preparan los elementos del carrusel y se define el contenido que se mostrará, incluyendo títulos, textos e imágenes. Se proporcionan funciones para avanzar y retroceder en el carrusel, y se configuran eventos de clic en las flechas de navegación para activar estas funciones. Cuando hacemos clic en las flechas, el carrusel cambia al siguiente o al anterior elemento dependiendo de la flecha que se clique, actualizando el contenido mostrado en consecuencia.
+
+* El submenu se lleva a cabo con el script del archivo "submenu.js"
+
+Cuando el cursor entra en el botón del menú, el menú lateral se muestra, y cuando el cursor sale del menú lateral, este se oculta. Esto permite mostrar u ocultar el menú lateral según la interacción del usuario con el botón del menú.
 
 # Página 3 - Tienda 
 Los diferentes links de la página principal redirigen, entre otros, a la página tienda, la cual simula una serie de productos los cuales tendrían que funcionar y acceder a sus características. 
@@ -84,10 +88,18 @@ El menú para pantallas pequeñas tambien cambia.
 
 ![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto14.png) 
 
+* El modo oscuro se realiza con el script dentro del archivo "modo.js"
+
+Inicialmente, oculta el ícono de Sol que se visualiza al cargar la página. Luego, busca el botón con el ID "modo-oscuro" y añade un evento de clic a este botón. Cuando se hace clic en el botón, cambia el modo de la página web alternando la clase "dark-mode" en el elemento <body>, lo que alterna entre el modo oscuro y el modo claro de la página. Además, cambia la visibilidad de los iconos de la luna y el sol dependiendo del modo de la página, mostrando uno u otro según corresponda para proporcionar una indicación visual sobre el estado del modo de la página.
+
 # Página 4 - Comparativa
 Esta página contiene dos contenedores, los cuales tienen 4 prodcutos, pudiendose seleccionar y comparar las características de los dispositivios elegidos. 
 
 Al elegir los diferentes dispositivios cambiará tanto la imagen como las caracteristicas de cada uno.
+
+* La comparación se realiza con el script del archivo "comparar.js"
+
+Este script en JavaScript compara dos productos de nustra página web. Cuando se selecciona un producto, la función showProduct(productId) obtiene su información, incluida la URL de la imagen y las características específicas del producto. Luego, muestra la imagen y las características en la página. La función getProductCharacteristics(productName) devuelve las características del producto basadas por su nombre. Las características incluyen detalles como el tamaño de la pantalla, el procesador, la memoria RAM, el almacenamiento, la capacidad de la batería, las cámaras y el sistema operativo.
 
 ![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto8.png) 
 
@@ -106,3 +118,6 @@ Una vez realizada de manera exitosa la encueta aparecerá un recuadro en formato
 
 ![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto100.png) 
 
+* La encuesta se valida con el script del archivo "alert.js"
+
+Este script en JavaScript para validar y procesar nuestra encuesta en una página web. La función validarEncuesta() verifica si el usuario ha seleccionado opciones para evaluar la calidad de productos y la atención al cliente. Si no ha seleccionado ninguna opción, muestra un alert. La función enviarEncuesta() se activa al enviar la encuesta, verifica que se hayan rellenado todos los campos de la encuesta y muestra un mensaje de agradecimiento si todo está bien, redirigiendo al usuario a otra página. Si algo está mal, no hace nada hasta que se completen las selecciones necesarias.
