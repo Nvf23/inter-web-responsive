@@ -25,6 +25,10 @@ Una vez se cumplan las condiciones aparecerá un mensaje en formato Alert para c
 
 ![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto25.png) 
 
+La validación se lleva a cabo con un script llamado validarEncuesta()
+
+La función validarEncuesta() verifica si el usuario ha seleccionado opciones para evaluar la calidad de productos y la atención al cliente. Si no ha seleccionado ninguna opción, muestra el alert. La función enviarEncuesta() se activa al enviar la encuesta, verifica que se hayan rellenado todos los campos de la encuesta y muestra un mensaje de agradecimiento si todo está bien, redirigiendo al usuario a otra página. Si algo está mal, no hace nada hasta que se completen las selecciones necesarias.
+
 # Página 2 - Página principal (Main) 
 Una vez se haya aceptado el alert un script te redirigirá a la página princiapl, la cual mostrará las diferntes secciones de la misma.
 
@@ -54,6 +58,10 @@ Mas abajo encontramos otro contenedor con las mismas características y un foote
 Al pulsar los links de "Smart Home" y "Wereables" nos saldrá un error de que estas páginas no están disponibles.
 
 ![](https://github.com/Nvf23/inter-web-responsive/blob/main/capturas/foto10.png) 
+
+El carrusel se lleva a cabo con el script del archivo "carrusel.js"
+
+Al cargar la página, se preparan los elementos del carrusel y se define el contenido que se mostrará, incluyendo títulos, textos e imágenes. Se proporcionan funciones para avanzar y retroceder en el carrusel, y se configuran eventos de clic en las flechas de navegación para activar estas funciones. Cuando hacemos clic en las flechas, el carrusel cambia al siguiente o al anterior elemento dependiendo de la flecha que se clique, actualizando el contenido mostrado en consecuencia.
 
 # Página 3 - Tienda 
 Los diferentes links de la página principal redirigen, entre otros, a la página tienda, la cual simula una serie de productos los cuales tendrían que funcionar y acceder a sus características. 
